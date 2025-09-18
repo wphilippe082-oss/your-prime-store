@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YOUR PRIME - Boutique Officielle</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #111; }
+    header { background: #000; color: #fff; padding: 20px; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5em; }
+    header p { margin: 5px 0 0; font-style: italic; color: gold; }
+    .hero { background: url('hero-image.jpg') no-repeat center center/cover; color: #fff; text-align: center; padding: 100px 20px; }
+    .hero h2 { font-size: 2em; margin-bottom: 20px; }
+    .btn { background: gold; color: #000; padding: 10px 20px; text-decoration: none; font-weight: bold; border-radius: 5px; }
+    .catalogue { padding: 50px 20px; text-align: center; }
+    .catalogue h3 { margin-bottom: 30px; font-size: 2em; }
+    .products { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; }
+    .product { border: 1px solid #ddd; padding: 15px; border-radius: 10px; }
+    .product img { width: 100%; border-radius: 8px; }
+    .product h4 { margin: 10px 0 5px; }
+    .product p { margin: 5px 0 15px; }
+    .vision { background: #111; color: #fff; padding: 50px 20px; text-align: center; }
+    .vision p { max-width: 600px; margin: auto; font-size: 1.2em; line-height: 1.5; }
+    footer { background: #000; color: #fff; text-align: center; padding: 20px; font-size: 0.9em; }
+    .whatsapp { position: fixed; bottom: 20px; right: 20px; background: #25D366; color: #fff; padding: 15px; border-radius: 50%; font-size: 24px; text-decoration: none; }
+  
+
+    .hero {
+  background-image:  url('images/costard prime.jpg'); /* Chemin vers votre image */
+  background-size: cover; /* L'image couvrira toute la section */
+  background-position: center center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche l'image de se répéter */
+  color: #ffffff; /* Couleur du texte pour qu'il soit visible sur l'arrière-plan sombre */
+  text-align: center;
+  padding: 100px 20px; /* Ajustez le rembourrage selon vos besoins */
+  min-height: 500px; /* Hauteur minimale de la section pour bien voir l'image */
+  display: flex; /* Utilisation de flexbox pour centrer le contenu */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative; /* Nécessaire pour l'overlay */
+}
+
+/* Pour l'effet "fondu" ou overlay sombre */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Couleur noire avec 60% d'opacité */
+  z-index: 1; /* Place l'overlay au-dessus de l'image mais sous le texte */
+}
+
+/* Assurez-vous que le contenu (texte et bouton) est au-dessus de l'overlay */
+.hero h2,
+.hero .btn {
+  position: relative;
+  z-index: 2; /* Place le texte et le bouton au-dessus de l'overlay */
+}
+
+/* Styles pour le bouton pour qu'il ressorte bien */
+.hero .btn {
+  background-color: #ffd700; /* Une couleur dorée pour correspondre à "Your Prime" */
+  color: #000000;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+  background-color: #e6c200;
+}
+
+.hero h2 {
+  font-size: 3em; /* Grande taille pour le titre */
+  margin-bottom: 20px;
+}
+  
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YOUR PRIME</h1>
+    <p>Ton moment. Ton style. Ton Prime.</p>
+  </header>
+
+  <section class="hero">
+    <h2>Affirme ton Prime dès aujourd’hui</h2>
+    <a href="#catalogue" class="btn">Découvrir le catalogue</a>
+  </section>
+
+  <section class="catalogue" id="catalogue">
+
+    <h3>Catalogue PRIME GOTHIQUE</h3>
+    <div class="products">
+      <div class="product">
+        <img src="images/IMG-20250812-WA0006.jpg" alt="T-shirt Prime Classic">
+        <h4>T-shirt Prime Edition dark blue</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/IMG-20250811-WA0014.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime Édition full white</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/IMG-20250811-WA0009.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime Édition full black</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+    </div>
+
+    <h3>Catalogue PRIME CLASSIQUE</h3>
+    <div class="products">
+      <div class="product">
+        <img src="images/IMG-20250812-WA0005.jpg" alt="T-shirt Prime Classic">
+        <h4>T-shirt Prime Classic</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/IMG-20250812-WA0004.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime Classic</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/IMG-20250812-WA0003.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime Classic</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+    </div>
+
+    <h3>Catalogue</h3>
+    <div class="products">
+      <div class="product">
+        <img src="images/IMG-20250906-WA0005.jpg" alt="T-shirt Prime Classic">
+        <h4>T-shirt Prime swag</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/IMG-20250906-WA0006.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime swag</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/IMG-20250906-WA0008.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime swag</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+    </div>
+
+    <h3>Catalogue</h3>
+    <div class="products">
+      <div class="product">
+        <img src="images/WhatsApp Image 2025-09-04 à 16.50.05_897d7fbc.jpg" alt="T-shirt Prime Classic">
+        <h4>T-shirt Prime unique</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/WhatsApp Image 2025-09-10 à 21.45.46_8422f229.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+      <div class="product">
+        <img src="images/WhatsApp Image 2025-09-04 à 16.50.05_3f6020d3.jpg" alt="T-shirt Prime Edition Noire">
+        <h4>T-shirt Prime</h4>
+        <p>4000 FCFA</p>
+        <a href="https://wa.me/22892394212" class="btn">Commander sur WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="vision">
+    <p>YOUR PRIME n’est pas qu’un vêtement. C’est une déclaration. Une vision pour ceux qui veulent atteindre leur meilleur niveau et inspirer les autres. Porte ton Prime.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 YOUR PRIME. Tous droits réservés.</p>
+    <p><a href="https://tiktok.com/@yourprime" style="color:gold;">TikTok</a> | <a href="https://instagram.com/yourprime" style="color:gold;">Instagram</a></p>
+  </footer>
+
+  <a href="https://wa.me/22892394212" class="whatsapp">💬</a>
+</body>
+</html>
